@@ -1,0 +1,43 @@
+.form {
+    width: 80vw;
+    background-color: rgb(229, 220, 230);
+    margin: 0 auto;
+    padding: 15px;
+    box-sizing: border-box;
+
+    &__main {
+        margin: 0;
+    }
+
+    &__title {
+        font-size: 32px;
+    }
+
+    &__input {
+        font-size: 16px;
+        color: rgba(0, 0, 0, 0.5);
+        width: 100%;
+        margin: 5px 0 5px 0;
+        padding: 5px;
+        outline: none;
+        box-sizing: border-box;
+    }
+
+    &__button {
+        font-size: 16px;
+        padding: 10px;
+        margin: 5px 0 5px 0;
+        width: 100%;
+        font-weight: bold;
+        background-color: rgb(128, 128, 128);
+        color: white;
+        outline: none;
+        transition: 0.5s;
+
+        &:hover {
+            cursor: pointer;
+            background-color: rgb(169, 169, 169);
+            color: white;
+        }
+    }
+}

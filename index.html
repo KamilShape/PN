@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Powerlifting Nerd</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=latin-ext" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/10467f5826.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <nav class="menu">
+    <div class="menu__logo"><img src="images/Logo.png" alt="" /></div>
+    <div class="menu__hamburger_icon">
+      <div class='menu__title'>
+        <p>Menu</p>
+      </div>
+      <div class="menu__bars">
+        <div class="menu__hamburger_bar"></div>
+        <div class="menu__hamburger_bar"></div>
+        <div class="menu__hamburger_bar"></div>
+      </div>
+    </div>
+    <div class='menu__container'>
+      <ul class="menu__list">
+        <li class="menu__list_item"><a href="#">articles</a></li>
+        <li class="menu__list_item"><a href="#">about</a></li>
+        <li class="menu__list_item"><a href="#">training</a></li>
+        <li class="menu__list_item"><a href="#">kitchen</a></li>
+        <li class="menu__list_item"><a href="#">contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <section class='articles'>
+    <article class="articles__article">
+      <h1 class="articles__title">TITLE</h1>
+      <p class="articles__date">March 20, 2020</p>
+      <div class="articles__image"><img src="images/article__1.jpg" alt=""></div>
+      <p class="articles__read_more">[Read more...]</p>
+    </article>
+    <article class="articles__article">
+      <h1 class="articles__title">TITLE</h1>
+      <p class="articles__date">March 20, 2020</p>
+      <div class="articles__image"><img src="images/article_2.jpg" alt=""></div>
+      <p class="articles__read_more">[Read more...]</p>
+    </article>
+    <article class="articles__article">
+      <h1 class="articles__title">TITLE</h1>
+      <p class="articles__date">March 20, 2020</p>
+      <div class="articles__image"><img src="images/article_3.jpg" alt=""></div>
+      <p class="articles__read_more">[Read more...]</p>
+
+    </article>
+  </section>
+  <section class='social_media'>
+    <h1 class='social_media__title'>FOLLOW</h1>
+    <div class='social_media__parent'>
+      <div class='social_media__div social_media__div-facebook'>
+        <div class="social_media__circle social_media__circle-facebook"><i class="fab fa-facebook-square"></i>
+        </div>
+      </div>
+      <div class='social_media__div social_media__div-instagram'>
+        <div class="social_media__circle social_media__circle-instagram"><i class="fab fa-instagram"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class='form'>
+    <h1 class='form__title'>GET IN TOUCH</h1>
+    <form action="form__main">
+      <input type="text" class='form__input' value="Name" placeholder="Name">
+      </br>
+      <input type="text" class='form__input' value="E-mail" placeholder="E-mail">
+    </form>
+    <button class="form__button">SEND :)</button>
+  </section>
+</body>
+
+</html>

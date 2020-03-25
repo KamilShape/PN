@@ -1,0 +1,247 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.menu {
+  height: 70px;
+  width: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 20px 0 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-bottom: 5px solid black;
+}
+
+.menu__logo {
+  margin: 0;
+}
+
+.menu__logo img {
+  height: 70px;
+}
+
+.menu__container {
+  display: none;
+}
+
+.menu__hamburger_icon {
+  width: 90px;
+  height: 30px;
+  position: relative;
+  margin: 20px 0 auto auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+
+.menu__hamburger_icon:hover {
+  cursor: pointer;
+}
+
+.menu__title {
+  width: 50px;
+  margin: 0;
+  line-height: 30px;
+  height: 30px;
+}
+
+.menu__title p {
+  padding: 0 10px 0 10px;
+  text-transform: uppercase;
+}
+
+.menu__bars {
+  width: 30px;
+  margin-left: 15px;
+}
+
+.menu__hamburger_bar {
+  position: absolute;
+  width: 30px;
+  height: 6px;
+  background-color: black;
+  bottom: calc(50% - 3px);
+}
+
+.menu__hamburger_bar:nth-child(1) {
+  top: 0;
+}
+
+.menu__hamburger_bar:nth-child(3) {
+  bottom: 0;
+}
+
+.menu__list {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
+}
+
+.menu__list_item {
+  text-transform: uppercase;
+}
+
+.menu__list_item a {
+  text-decoration: none;
+}
+
+.articles__article {
+  margin: 10px auto;
+  width: 80vw;
+  overflow: hidden;
+}
+
+.articles__title {
+  font-size: 32px;
+}
+
+.articles__date {
+  font-size: 16px;
+  padding: 5px 0;
+}
+
+.articles__image {
+  width: 100%;
+}
+
+.articles__image img {
+  width: 100%;
+}
+
+.social_media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 80vw;
+  background-color: #e5dce6;
+}
+
+.social_media__title {
+  font-size: 32px;
+  text-align: left;
+  margin-left: 0;
+}
+
+.social_media__div {
+  width: 60vw;
+  height: 70px;
+  margin: 10px auto 10px auto;
+  border-radius: 15px;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.social_media__div-facebook {
+  background-color: #3b5998;
+}
+
+.social_media__div-facebook:hover {
+  background-color: rgba(59, 89, 152, 0.8);
+  cursor: pointer;
+}
+
+.social_media__div-instagram {
+  background-color: #833ab4;
+}
+
+.social_media__div-instagram:hover {
+  background-color: rgba(131, 58, 180, 0.7);
+  cursor: pointer;
+}
+
+.social_media__circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.social_media__circle i {
+  display: block;
+  font-size: 32px;
+  -webkit-transform: translate(22.5%, 25%);
+          transform: translate(22.5%, 25%);
+}
+
+.social_media__circle-facebook i {
+  color: #3b5998;
+}
+
+.social_media__circle-instagram {
+  color: #833ab4;
+}
+
+.form {
+  width: 80vw;
+  background-color: #e5dce6;
+  margin: 0 auto;
+  padding: 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.form__main {
+  margin: 0;
+}
+
+.form__title {
+  font-size: 32px;
+}
+
+.form__input {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  margin: 5px 0 5px 0;
+  padding: 5px;
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.form__button {
+  font-size: 16px;
+  padding: 10px;
+  margin: 5px 0 5px 0;
+  width: 100%;
+  font-weight: bold;
+  background-color: gray;
+  color: white;
+  outline: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.form__button:hover {
+  cursor: pointer;
+  background-color: darkgray;
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */
