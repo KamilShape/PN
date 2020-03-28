@@ -1,6 +1,5 @@
 .menu {
     background-color: white;
-    // height: 200px;
     width: 100%;
     overflow: hidden;
     display: flex;
@@ -27,7 +26,6 @@
 
     &__container2 {
         display: none;
-        transition: 0.5s;
     }
 
     &__container2--active {
@@ -70,15 +68,35 @@
         width: 30px;
         height: 6px;
         background-color: black;
-        bottom: calc(50% - 3px)
+        bottom: calc(50% - 3px);
+        transition: 0.2s;
+    }
+
+    &__hamburger_bar--active {
+        display: none;
     }
 
     &__hamburger_bar_top {
         top: 0;
+        // transition: 0.5s;
+    }
+
+    &__hamburger_bar_top--active {
+        transform-origin: center center;
+        top: calc(50% - 3px);
+        transform: rotate(-45deg);
+
     }
 
     &__hamburger_bar_bottom {
         bottom: 0;
+        // transition: 0.5s;
+    }
+
+    &__hamburger_bar_bottom--active {
+        transform-origin: center center;
+        bottom: calc(50% - 3px);
+        transform: rotate(45deg);
     }
 
     &__list {
