@@ -4,20 +4,27 @@
 }
 
 body {
+  margin: 0;
   font-family: 'Roboto', sans-serif;
 }
 
 .menu {
-  height: 70px;
+  background-color: white;
   width: 100%;
   overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding: 0 20px 0 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border-bottom: 5px solid black;
+  position: fixed;
+  left: 0;
+  top: 0;
 }
 
 .menu__logo {
@@ -25,11 +32,25 @@ body {
 }
 
 .menu__logo img {
-  height: 70px;
+  margin: 15px;
+  height: 40px;
 }
 
-.menu__container {
+.menu__container1 {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu__container2 {
   display: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.menu__container2--active {
+  display: block;
 }
 
 .menu__hamburger_icon {
@@ -64,6 +85,8 @@ body {
 .menu__bars {
   width: 30px;
   margin-left: 15px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .menu__hamburger_bar {
@@ -74,11 +97,11 @@ body {
   bottom: calc(50% - 3px);
 }
 
-.menu__hamburger_bar:nth-child(1) {
+.menu__hamburger_bar_top {
   top: 0;
 }
 
-.menu__hamburger_bar:nth-child(3) {
+.menu__hamburger_bar_bottom {
   bottom: 0;
 }
 
@@ -92,20 +115,35 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: left;
+  width: 100vw;
+  padding: 5px;
 }
 
 .menu__list_item {
   text-transform: uppercase;
+  text-align: left;
+  width: 100%;
+  padding: 5px;
 }
 
 .menu__list_item a {
   text-decoration: none;
+  color: black;
+  padding: 5px;
+}
+
+.menu__list_item a:hover {
+  border-bottom: 1px solid black;
 }
 
 .articles__article {
   margin: 10px auto;
   width: 80vw;
   overflow: hidden;
+}
+
+.articles__article:nth-of-type(1) {
+  margin-top: 70px;
 }
 
 .articles__title {
@@ -119,6 +157,10 @@ body {
 
 .articles__image {
   width: 100%;
+}
+
+.articles__desc {
+  padding: 10px 0;
 }
 
 .articles__image img {
@@ -143,7 +185,7 @@ body {
 }
 
 .social_media__title {
-  font-size: 32px;
+  font-size: 26px;
   text-align: left;
   margin-left: 0;
 }
@@ -212,7 +254,7 @@ body {
 }
 
 .form__title {
-  font-size: 32px;
+  font-size: 26px;
 }
 
 .form__input {

@@ -5,6 +5,10 @@
         overflow: hidden;
     }
 
+    &__article:nth-of-type(1) {
+        margin-top: 70px;
+    }
+
     &__title {
         font-size: 32px;
     }
@@ -16,6 +20,10 @@
 
     &__image {
         width: 100%;
+    }
+
+    &__desc {
+        padding: 10px 0;
     }
 
     &__image img {
